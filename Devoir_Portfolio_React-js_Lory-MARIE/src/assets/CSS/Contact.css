@@ -1,0 +1,146 @@
+/* ===== PRÉSENTATION ===== */
+.presentation {
+    text-align: center;
+    margin-top: 3rem; /* FIXE, prévisible */
+    width: 50%;
+}
+
+.presentation p {
+  font-size: large;
+}
+
+.text-presentation {
+    position: relative;
+}
+
+.presentation hr {
+    width: 90%;
+    height: 10px;
+    background-color: #0D6EFD;
+    opacity: 1;
+    margin-bottom: -10% !important;
+}
+
+main div section hr {
+    min-width: 100% !important;
+    margin-bottom: 1%;
+    left: 0%; /* position horizontale centrée */
+    height: 10px; /* épaisseur du trait */
+    background-color: #0D6EFD; /* couleur du trait */
+}
+
+/* ===== CONTENEUR DES 2 SECTIONS ===== */
+
+.contact-wrapper {
+  padding: 4rem 0;
+  display: flow-root; /* 🔥 empêche le margin collapsing */
+}
+
+.contact-section {
+  width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+
+  display: flex;
+  gap: 3rem;
+
+  background-color: #ffffff;
+  border: 2px solid #dee2e6;
+  border-radius: 8px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== SECTIONS ===== */
+.contact-section section {
+    width: 50%;
+    text-align: left;
+}
+
+/* HR dans les sections */
+.contact-section section hr {
+    width: 90%;
+    height: 10px;
+    background-color: #0D6EFD;
+    opacity: 1;
+    margin: 1rem 0 2rem;
+}
+
+/* ===== FORMULAIRE ===== */
+.contact-section form div {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .contact-section {
+      flex-direction: column; /* 🔥 empile verticalement */
+      width: 95%;             /* un peu plus large sur mobile */
+      padding: 2rem 1.5rem;
+    }
+  
+    .contact-section section {
+      width: 100%;            /* chaque section prend toute la largeur */
+    }
+  }
+
+.contact-textarea {
+  width: 100%;
+  min-height: 650px;   /* 🔥 taille visible */
+  padding: 1rem;
+  font-size: 14px;
+  resize: vertical;   /* 🔥 l’utilisateur peut agrandir */
+}
+
+input,
+textarea {
+    width: 100%;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+input {
+  width: 100%;
+}
+
+/* textarea */
+.placeholder-style {
+    height: 200px;
+    padding: 1%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+/* ===== BOUTON ===== */
+.block-border {
+    display: block;
+    margin: 2rem auto 0; /* 🔥 CENTRAGE */
+    padding: 0.6rem 2.5rem;
+    background-color: #0D6EFD !important;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.block-border:hover {
+    background-color:#6610f2;
+}
+
+/* ===== COORDONNÉES ===== */
+.contact-section section div {
+    font-size: 110%;
+    margin-bottom: 0.5rem;
+}
+
+.contact-section section div img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+    margin-right: 0.5rem;
+}
+
+.geolocalisation {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}

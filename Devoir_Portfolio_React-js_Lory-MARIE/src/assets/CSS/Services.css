@@ -1,0 +1,94 @@
+
+.image-presentation {
+    width: 100%;
+    height: auto;
+}
+
+.presentation {
+    text-align: center;
+    margin-top: 5%;
+    width: 50%;
+    left: 50%
+}
+
+.text-presentation {
+    position: relative;
+    left: 50%; /* position horizontale centrée */
+}
+
+.section-espacement {
+    margin: 0 auto;
+    text-align: center;
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /* 🔥 toutes les colonnes prennent la même hauteur */
+    gap: 2rem; /* 🔥 ICI tu contrôles VRAIMENT l’espace */
+}
+
+.service-col {
+  flex: 1; /* largeur fixe des cards */
+  max-width: 100%;
+  width: 30%;
+  display: flex;
+}
+
+.section-espacement > section {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+hr {
+    border: none;
+    position: relative;
+    left: 50%; /* position horizontale centrée */
+    height: 10px; /* épaisseur du trait */
+    background-color: #0D6EFD; /* couleur du trait */
+    opacity: 1; /* 🔥 IMPORTANT */
+}
+
+/* Icônes des services */
+.service-icon {
+  width: 50px !important;
+  height: 50px !important;
+  object-fit: contain;
+  margin: 1.5rem auto 1rem auto; /* centre horizontalement */
+  display: block;
+}
+
+.card {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background-color: transparent;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ced4da !important; /* gris Bootstrap clean */
+  border-radius: 6px;        /* léger arrondi (optionnel mais élégant) */
+}
+
+/* Ajoutez cette règle pour les cards Bootstrap */
+.card-hover {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Lors du survol, ajouter une ombre et changer la couleur de fond */
+.card-hover:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* ombre autour de la card */
+  background-color: #efefef; /* couleur de fond modifiée au survol, ajustez selon votre besoin */
+}
+
+@media (max-width: 500px) {
+  .section-espacement {
+    flex-direction: column;   /* 🔥 empile verticalement */
+    align-items: center;
+  }
+
+  .service-col {
+    width: 100%;
+    max-width: 100%;
+  }
+}

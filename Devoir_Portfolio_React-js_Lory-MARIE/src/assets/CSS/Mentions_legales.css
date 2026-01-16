@@ -1,0 +1,49 @@
+
+.presentation {
+  text-align: center;
+  width: 50%;
+  margin-bottom: 9%;
+}
+
+.presentation hr {
+  min-width: 50% !important;
+  width: 50% !important;
+  height: 10px;
+  margin: 2rem auto 4rem; /* 🔥 espace en bas */
+  border: none;
+  background-color: #0D6EFD;
+  opacity: 1;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.gras-h3 {
+  font-weight: bold;
+}
+
+.text-presentation {
+    position: relative;
+    left: 50%; /* position horizontale centrée */
+}
+
+main {
+  margin-bottom: 5%;
+}
+
+.accordéon-position {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.espacement-text-pictogramme {
+  margin-left: 1%;
+}
+
+.taille-pictogramme {
+  width: 20px;
+  height: 20px;
+  object-fit: contain; /* pour conserver l'aspect sans déformer */
+}
+

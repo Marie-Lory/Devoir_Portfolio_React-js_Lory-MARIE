@@ -1,0 +1,93 @@
+
+.presentation {
+    text-align: center;
+    margin-top: 5%;
+    width: 50%;
+    left: 50%
+}
+
+.image-presentation {
+    width: 100%;
+    height: auto;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h2 {
+  font-size: 150%;
+}
+
+.section-espacement {
+  max-width: 1200px; /* 🔥 permet d’agrandir les cards */
+  margin: 4rem auto; /* 🔥 centre horizontalement */
+}
+.text-presentation {
+    position: relative;
+    left: 50%; /* position horizontale centrée */
+}
+
+/* Liste en bas */
+.list-group-item {
+  background-color: #f7f7f7 !important; /* ✅ demandé */
+  text-align: center;
+  font-size: 0.9rem;
+  border-top: 1px solid #e0e0e0;
+}
+
+hr {
+  width: 40%;              /* 🔥 longueur de la barre */
+  height: 10px;            /* 🔥 épaisseur */
+  margin: 2rem auto;       /* 🔥 centrage horizontal */
+  border: none;
+  background-color: #0D6EFD;
+  opacity: 1; /* 🔥 IMPORTANT */
+}
+
+/* Cards */
+.card {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Image pleine largeur */
+.card-img-top {
+  width: 100%;
+  height: 220px;          /* 🔥 hauteur uniforme */
+  object-fit: cover;     /* 🔥 remplit sans déformation */
+}
+
+.card-hover {
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Lors du survol, ajouter une ombre et changer la couleur de fond */
+.card-hover:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* ombre autour de la card */
+  background-color: #efefef; /* couleur de fond modifiée au survol, ajustez selon votre besoin */
+}
+
+/* Changement de couleur au survol pour les boutons btn btn-primary */
+.btn.btn-primary:hover {
+  background-color: #0dadfd;
+}
+
+@media (max-width: 1200px) {
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  footer div {
+    flex-direction: column;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  footer section {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
